@@ -30,7 +30,7 @@
         {
             this.FirstNameLabel = new System.Windows.Forms.Label();
             this.LastNameLabel = new System.Windows.Forms.Label();
-            this.FistNameBox = new System.Windows.Forms.TextBox();
+            this.FirstNameBox = new System.Windows.Forms.TextBox();
             this.LastNameBox = new System.Windows.Forms.TextBox();
             this.LabelFirstAddress = new System.Windows.Forms.Label();
             this.AddressFirstBox = new System.Windows.Forms.TextBox();
@@ -45,6 +45,9 @@
             this.StoreIt = new System.Windows.Forms.Button();
             this.ConforimationLabel = new System.Windows.Forms.Label();
             this.Confirmation = new System.Windows.Forms.Label();
+            this.TwitterLabel = new System.Windows.Forms.Label();
+            this.TwitterBox = new System.Windows.Forms.TextBox();
+            this.TweetDisplay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // FirstNameLabel
@@ -65,12 +68,12 @@
             this.LastNameLabel.TabIndex = 1;
             this.LastNameLabel.Text = "Client LastName";
             // 
-            // FistNameBox
+            // FirstNameBox
             // 
-            this.FistNameBox.Location = new System.Drawing.Point(19, 29);
-            this.FistNameBox.Name = "FistNameBox";
-            this.FistNameBox.Size = new System.Drawing.Size(130, 20);
-            this.FistNameBox.TabIndex = 2;
+            this.FirstNameBox.Location = new System.Drawing.Point(19, 29);
+            this.FirstNameBox.Name = "FirstNameBox";
+            this.FirstNameBox.Size = new System.Drawing.Size(130, 20);
+            this.FirstNameBox.TabIndex = 2;
             // 
             // LastNameBox
             // 
@@ -161,7 +164,7 @@
             // 
             // StoreIt
             // 
-            this.StoreIt.Location = new System.Drawing.Point(19, 232);
+            this.StoreIt.Location = new System.Drawing.Point(19, 293);
             this.StoreIt.Name = "StoreIt";
             this.StoreIt.Size = new System.Drawing.Size(75, 23);
             this.StoreIt.TabIndex = 14;
@@ -172,11 +175,11 @@
             // ConforimationLabel
             // 
             this.ConforimationLabel.AutoSize = true;
-            this.ConforimationLabel.Location = new System.Drawing.Point(22, 286);
+            this.ConforimationLabel.Location = new System.Drawing.Point(19, 357);
             this.ConforimationLabel.Name = "ConforimationLabel";
-            this.ConforimationLabel.Size = new System.Drawing.Size(139, 13);
+            this.ConforimationLabel.Size = new System.Drawing.Size(206, 13);
             this.ConforimationLabel.TabIndex = 15;
-            this.ConforimationLabel.Text = "Mose Recent Name Saved:";
+            this.ConforimationLabel.Text = "Most Recent Name Saved && their Tweets:";
             // 
             // Confirmation
             // 
@@ -186,11 +189,39 @@
             this.Confirmation.Size = new System.Drawing.Size(0, 13);
             this.Confirmation.TabIndex = 16;
             // 
+            // TwitterLabel
+            // 
+            this.TwitterLabel.AutoSize = true;
+            this.TwitterLabel.Location = new System.Drawing.Point(22, 208);
+            this.TwitterLabel.Name = "TwitterLabel";
+            this.TwitterLabel.Size = new System.Drawing.Size(82, 13);
+            this.TwitterLabel.TabIndex = 17;
+            this.TwitterLabel.Text = "Twitter Account";
+            // 
+            // TwitterBox
+            // 
+            this.TwitterBox.Location = new System.Drawing.Point(19, 225);
+            this.TwitterBox.Name = "TwitterBox";
+            this.TwitterBox.Size = new System.Drawing.Size(130, 20);
+            this.TwitterBox.TabIndex = 18;
+            // 
+            // TweetDisplay
+            // 
+            this.TweetDisplay.AutoSize = true;
+            this.TweetDisplay.Location = new System.Drawing.Point(22, 402);
+            this.TweetDisplay.Name = "TweetDisplay";
+            this.TweetDisplay.Size = new System.Drawing.Size(62, 13);
+            this.TweetDisplay.TabIndex = 19;
+            this.TweetDisplay.Text = "No Tweets!";
+            // 
             // ClientInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 416);
+            this.ClientSize = new System.Drawing.Size(383, 530);
+            this.Controls.Add(this.TweetDisplay);
+            this.Controls.Add(this.TwitterBox);
+            this.Controls.Add(this.TwitterLabel);
             this.Controls.Add(this.Confirmation);
             this.Controls.Add(this.ConforimationLabel);
             this.Controls.Add(this.StoreIt);
@@ -205,7 +236,7 @@
             this.Controls.Add(this.AddressFirstBox);
             this.Controls.Add(this.LabelFirstAddress);
             this.Controls.Add(this.LastNameBox);
-            this.Controls.Add(this.FistNameBox);
+            this.Controls.Add(this.FirstNameBox);
             this.Controls.Add(this.LastNameLabel);
             this.Controls.Add(this.FirstNameLabel);
             this.Name = "ClientInfo";
@@ -219,7 +250,7 @@
 
         private System.Windows.Forms.Label FirstNameLabel;
         private System.Windows.Forms.Label LastNameLabel;
-        private System.Windows.Forms.TextBox FistNameBox;
+        private System.Windows.Forms.TextBox FirstNameBox;
         private System.Windows.Forms.TextBox LastNameBox;
         private System.Windows.Forms.Label LabelFirstAddress;
         private System.Windows.Forms.TextBox AddressFirstBox;
@@ -234,6 +265,9 @@
         private System.Windows.Forms.Button StoreIt;
         private System.Windows.Forms.Label ConforimationLabel;
         private System.Windows.Forms.Label Confirmation;
+        private System.Windows.Forms.Label TwitterLabel;
+        private System.Windows.Forms.TextBox TwitterBox;
+        private System.Windows.Forms.Label TweetDisplay;
     }
 }
 

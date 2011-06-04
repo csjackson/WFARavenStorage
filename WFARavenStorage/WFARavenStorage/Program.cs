@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using Twitterizer;
 
 namespace WFARavenStorage
 {
@@ -16,8 +17,8 @@ namespace WFARavenStorage
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ClientInfo());
-           
-            }
+        }
+    
         
     }
     public class Person
@@ -26,6 +27,8 @@ namespace WFARavenStorage
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Address PersonAddress { get; set; }
+        public string TwitterAcct { get; set; }
+        public IQueryable<Twitterizer.Core.TwitterObject> Chirps { get; set; }
     }
 
     public class Address
@@ -36,4 +39,5 @@ namespace WFARavenStorage
         public string AddressFirstLine { get; set; }
         public string AddressSecondLine { get; set; }
     }
+
 }
